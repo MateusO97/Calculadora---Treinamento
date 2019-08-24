@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def tela_de_operacao(request):
+    return render(request, 'subtracao/tela_de_operacao.html', {})
