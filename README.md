@@ -1,7 +1,7 @@
   <h3 align="center">Calculadora</h3>
 
   <p align="center">
-    <i>Treinamento Sprint</i>
+    <i>Treinamento _Sprint_</i>
     <br>
 </p>
 
@@ -10,70 +10,111 @@
 
 ## Introdução
 
-Neste treinamento estaremos aplicando todos os conceitos estudados até o momento, desde o funcionamento das metologias ágeis explicadas, até o desenvolvimento em Django utilizando Docker e seguindo o Gitflow para subirem as alterações feitas.
+Neste treinamento, aplicaremos todos os conceitos estudados até o momento. Uma aplicação deverá ser desenvolvida em Django utilizando Docker como ambiente de desenvolvimento. As metodologias a serem seguidas deverão ser as ágeis Scrum, XP e Kanban. O versionameto do projeto devará seguir os padrões do Gitflow.
 
-## Instalação
-Para este projeto será necessário possuir Git, e realizar a instalação do Docker e Docker Compose.
-
-### Pré-Requisitos
+## Softwares Necessários
+Para este projeto será necessário possuir Git, Docker e Docker Compose.  
+Links para instalação:
 * [Git](https://git-scm.com/)
 * [Docker](https://www.docker.com/community-edition#/download)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 
-### Clonar
-Clonar o repositório deste projeto.
+### Repositório
+Escolha uma forma de clonar o repositório deste projeto:
+* HTTPS: ``` git clone https://github.com/MateusO97/Calculadora---Treinamento ```
+* SSH: ``` git clone git@github.com:MateusO97/Calculadora---Treinamento.git ```
+
+### Ambiente
+Hora de rodar o projeto. Com o Docker rodando, navegue para o diretório do repositório clonado e rode o Docker Compose.
 
 ```bash
-$ git clone https://github.com/MateusO97/Calculadora---Treinamento
-```
-
-### Docker Compose
-Hora de rodar o projeto. Navegue no diretório no qual você clonou o projeto e rode o Docker Compose
-
-```bash
-$ cd diretorio-do-seu-clone
+$ cd Calculadora---Treinamento
 $ docker-compose up
 ```
 
-E está pronto! Agora você consegue rodar a aplicação, navegue até `http://localhost:3000/` no seu navegador!
-Caso os comandos acima não tenham funcionado, rode como sudo:
+E está pronto, a aplicação já está rodando. Abra o seu navegador na página `http://localhost:3000/` para ve-la funcionando!
 
+
+
+<em>Caso os comandos acima não tenham funcionado, rode como sudo:</em>
 ```bash
 $ sudo docker-compose up
 ```
 
 
-## Scrum City of Code
+## _Scrum City of Code_
 
-O desafio deste treinamento é finalizar as issues apresentadas neste repositório, mas seguindo o passo a passo do Scrum e utilizando dos conceitos aprendidos até o momento no tempo delimitado, acompanhe as intruções a seguir.
+O desafio deste treinamento é finalizar as _issues_ apresentadas neste repositório, mas seguindo o passo a passo do Scrum e utilizando dos conceitos aprendidos até o momento no tempo delimitado. Acompanhe as intruções a seguir:
 
-### Planejamento da Sprint [10 Minutos]
+### Planejamento da _Sprint_ [10 Minutos]
 
-A primeira fase do projeto será planejar a Sprint que irão executar, nesta etapa vocês terão um prazo de <b>10 Minutos</b> para concluir e estes passos são:
+A primeira fase do treinamento será para planejar a _Sprint_ a ser executada. Nesta etapa, vocês terão um prazo de <b>10 Minutos</b> para conclui-la. Estes serão os passos dessa etapa:
 
-  - Planning Poke: Pontuar as issues do backlog(Sugestão, em virtude do tempo realizem a votação e decidam rapidamente pela maioria dos votos)
-  - Alocar Histórias: Decidam quantas e quais issues serão feitas nesta Sprint, levem em consideração que teremos somente 2 Sprints.
-  - Definir Pareamentos: Montem as duplas, levando em consideração a passagem de conhecimento e aloquem as histórias de cada dupla
+  - Planning Poke: pontuar as _issues_ do backlog (Sugestão: em virtude do tempo, realizem a votação e decidam rapidamente pela maioria dos votos.)
+  - Alocar Histórias: decidam quantas e quais _issues_ serão feitas nessa primeira _Sprint_, levem em consideração que teremos somente 2 _Sprints_.
+  - Definir Pareamentos: montem as duplas, levando em consideração a passagem de conhecimento, e aloquem as histórias de cada dupla.
   
   
-### Execução [1 hora]
+### Execução da _Sprint_ [1 hora]
 
-Depois de definidos os pareamentos é hora de colocar a mão no código! Nessa etapa vocês terão um prazo de <b>30 minutos</b>, levem em consideração os seguintes pontos:
+Depois de definidos os pareamentos, é hora de colocar a mão no código! Nesta etapa, vocês terão um prazo de <b>30 minutos</b> para conclui-la. Levem em consideração os seguintes pontos:
 
-  - Esquema Dojo: Dentro da dupla o desenvolvimento vai funcionar da seguinte forma: Um dos membros começara como Piloto enquanto o outro irá sentar do seu lado sendo o Co-Piloto. O Piloto é o único que poderá tocar no código neste tempo, e enquanto ele estiver progamando seu dever é falar em voz alta para o Co-Piloto tudo que ele estiver fazendo. O Co-Piloto não poderá programar, mas pode falar para o Piloto o que ele deve fazer e guia-lo caso necessário.
-  - Daily: Após <b>15 Minutos</b> iremos parar as atividades e realizar um Stand Up, todos irão dizer rapidamente o que fizeram neste tempo. Após o Daily os Pilotos e Co-Pilotos inverterão os papéis.
-  - Commits: Os commits devem ser atômicos(1 funcionalidade por commit) e devem seguir o esquema de branches do Gitflow, o nome das Branches criadas deve ser: <b>issue_x_nome_issue</b> sendo "x" o número da Issue. 
-  - Pull Request: Ao finalizar sua Issue, a dupla deve solicitar um Pull Request e solicitar outra dupla para revisar e aceita-lo.
+  - Esquema Dojo: dentro da dupla, o desenvolvimento vai funcionar da seguinte forma: um dos membros começara como Piloto enquanto o outro irá sentar do seu lado sendo o Co-Piloto. O Piloto é o único que poderá tocar no código neste tempo, e enquanto ele estiver progamando, é seu dever falar em voz alta para o Co-Piloto tudo que estiver sendo feito. O Co-Piloto não poderá programar, mas pode falar para o Piloto o que ele deverá fazer e guia-lo caso necessário.
+  - Daily: após <b>15 Minutos</b>, iremos parar as atividades e realizar um _Stand Up_, todos dirão, rapidamente, o que fizeram nesse tempo. Após o Daily, os Pilotos e Co-Pilotos inverterão os papéis.
+  - Commits: os commits deverão ser atômicos (1 funcionalidade por commit) e devem seguir o esquema de branches do Gitflow. Os nomes das Branches criadas deverão seguir o seguinte padrão: <b>issue_x_nome_issue</b>, sendo "x" o número da _Issue_. 
+- Pull Request: ao finalizar sua _Issue_, a dupla deverá criar um _Pull Request_ e solicitar a revisão e, se possível, a aceitação de outra dupla.
   
- ### Revisão da Sprint [10 Minutos]
+### Revisão da _Sprint_ [10 Minutos]
 
-  - O que foi feito ?: Listar as Issues que foram finalizadas(Pull Requests aceitos)
-  - O que não foi feito ?: Listar as issues que não foram finalizadas.
-  - Porque não foi feito ?: Listar os problemas e dificuldades que impidiram de finalizar as Issues
+  - O que foi feito?: listar as _issues_ que foram finalizadas (_Pull Requests_ aceitos).
+  - O que não foi feito?: listar as _issues_ que não foram finalizadas.
+  - Porque não foi feito?: listar os problemas e dificuldades que impidiram de finalizar as _issues_.
   
- ### Retrospectiva da Sprint [10 Minutos]
+### Retrospectiva da _Sprint_ [10 Minutos]
 
-  - O que deu certo ?: Quais foram os pontos fortes da equipe nesta sprint ? O que funcionou melhor ?
-  - O que deu errado ?: O que deu errado do que foi planejado ? Quais fases menos funcionaram ?
-  - Como melhorar ?: Para uma próxima Sprint, o que poderia ser feito melhor ? Quais medidas seriam interessantes ? (Listar 3, uma que precisaria ocorrer imediatamente, uma que seria interessante mas não fundamental e uma que poderia um dia ocorrer)
+  - O que deu certo?: quais foram os pontos fortes da equipe nessa _Sprint_? O que funcionou melhor?
+  - O que deu errado?: o que deu errado do que foi planejado? Quais fases menos funcionaram?
+  - Como melhorar?: para uma próxima _Sprint_, o que poderia ser feito melhor? Quais medidas seriam interessantes? (Listar 3, uma que precisaria ocorrer imediatamente, uma que seria interessante, mas não fundamental e uma que poderia um dia ocorrer).
 
+
+#### Comandos úteis do Docker
+#### Como baixar uma imagem do docker
+```bash
+$ docker pull <imagem-desejada>
+```
+
+#### Listando imagens locais
+```bash
+$ docker images
+```
+
+#### Deletando imagens
+```bash
+$ docker rmi -f <id-da-imagem>
+```
+
+#### Listando contêineres em execução
+```bash
+$ docker ps
+```
+
+#### Removendo contêineres
+```bash
+$ docker rm [-f] <nome-do-contêiner-ou-id>
+```
+
+#### Execução de comandos de fora do contêiner
+```bash
+$ docker exec <nome-do-contêiner> <comando-desejado>
+```
+
+#### Comandos úteis do Django
+#### Como criar migrações
+```bash
+$ python3 manage.py makemigrations
+```
+
+#### Como rodar migrações
+```bash
+$ python3 manage.py migrate
+```
