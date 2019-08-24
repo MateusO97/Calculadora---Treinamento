@@ -46,7 +46,7 @@ $ sudo docker-compose up
 
 O desafio deste treinamento é finalizar as _issues_ apresentadas neste repositório, mas seguindo o passo a passo do Scrum e utilizando dos conceitos aprendidos até o momento no tempo delimitado. Acompanhe as intruções a seguir:
 
-### Planejamento da _Sprint_ [10 Minutos]
+### Planejamento da _Sprint_ [20 Minutos]
 
 A primeira fase do treinamento será para planejar a _Sprint_ a ser executada. Nesta etapa, vocês terão um prazo de <b>10 Minutos</b> para conclui-la. Estes serão os passos dessa etapa:
 
@@ -55,7 +55,7 @@ A primeira fase do treinamento será para planejar a _Sprint_ a ser executada. N
   - Definir Pareamentos: montem as duplas, levando em consideração a passagem de conhecimento, e aloquem as histórias de cada dupla.
   
   
-### Execução da _Sprint_ [1 hora]
+### Execução da _Sprint_ [2 hora]
 
 Depois de definidos os pareamentos, é hora de colocar a mão no código! Nesta etapa, vocês terão um prazo de <b>30 minutos</b> para conclui-la. Levem em consideração os seguintes pontos:
 
@@ -64,13 +64,13 @@ Depois de definidos os pareamentos, é hora de colocar a mão no código! Nesta 
   - Commits: os commits deverão ser atômicos (1 funcionalidade por commit) e devem seguir o esquema de branches do Gitflow. Os nomes das Branches criadas deverão seguir o seguinte padrão: <b>issue_x_nome_issue</b>, sendo "x" o número da _Issue_. 
 - Pull Request: ao finalizar sua _Issue_, a dupla deverá criar um _Pull Request_ e solicitar a revisão e, se possível, a aceitação de outra dupla.
   
-### Revisão da _Sprint_ [10 Minutos]
+### Revisão da _Sprint_ [20 Minutos]
 
   - O que foi feito?: listar as _issues_ que foram finalizadas (_Pull Requests_ aceitos).
   - O que não foi feito?: listar as _issues_ que não foram finalizadas.
   - Porque não foi feito?: listar os problemas e dificuldades que impidiram de finalizar as _issues_.
   
-### Retrospectiva da _Sprint_ [10 Minutos]
+### Retrospectiva da _Sprint_ [20 Minutos]
 
   - O que deu certo?: quais foram os pontos fortes da equipe nessa _Sprint_? O que funcionou melhor?
   - O que deu errado?: o que deu errado do que foi planejado? Quais fases menos funcionaram?
