@@ -1,0 +1,14 @@
+body {
+    border: 0px;
+    margin: 0px
+}
+
+.menu {
+    display: flex;
+    max-height: 120px;
+    background-color: blue;
+}
+
+.form {
+
+}
