@@ -5,10 +5,56 @@ body {
 
 .menu {
     display: flex;
-    max-height: 120px;
+    max-height: 80px;
     background-color: blue;
+    padding-left: 20px;
+    min-height: 80px;
+    align-items: flex-end;
+}
+
+.menu-options {
+    height: 100%;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.menu-options a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 20px;
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
+}
 
+.fields {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.fields input {
+    height: 40px;
+    width: 120px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
+}
+
+.fields #number_x, h1 {
+    margin-right: 10px;
+}
+
+.button-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit input {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
+    font-weight: bolder;
 }
