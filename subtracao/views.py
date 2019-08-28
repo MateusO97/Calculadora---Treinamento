@@ -16,4 +16,5 @@ def tela_de_operacao(request):
             return redirect('tela_de_operacao')
     else:
         form = SubForm()
-    return render(request, 'subtracao/tela_de_operacao.html', {'form': form}, {'operacoes': operacoes})
+    return render(request, 'subtracao/tela_de_operacao.html', {'form': form, 'operacoes': operacoes})
+
