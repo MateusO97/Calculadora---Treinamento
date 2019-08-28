@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
 from .forms import SubForm
 from .models import Operacao
+from django.utils import timezone
 
 def tela_de_operacao(request):
-    operacoes = Operacao.objects.all()
+    operacoes = Operacao.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     if request.method == "POST":
         form = SubForm(request.POST)
         if form.is_valid():
@@ -12,6 +13,7 @@ def tela_de_operacao(request):
             input1 = cd['number1']
             input2 = cd['number2']
             operacao.result = input1 - input2
+            operacao.published_date = timezone.now()
             operacao.save()
             return redirect('tela_de_operacao')
     else:
