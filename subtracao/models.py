@@ -6,5 +6,5 @@ class Operacao(models.Model):
     number2 = models.IntegerField()
     result = models.IntegerField()
 
-    def armazena(self):
+    def publish(self):
         self.save()
