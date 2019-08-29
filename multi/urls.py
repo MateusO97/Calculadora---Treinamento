@@ -3,5 +3,5 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('', views.multi_number)
+    path('', views.multi_multiplication, name='multi_multiplication'),
 ]
