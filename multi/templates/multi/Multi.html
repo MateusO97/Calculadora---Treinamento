@@ -16,18 +16,19 @@
                 <a href="#">subtração</a>
                 <a href="#">divisão</a>
                 <a href="#">potenciação</a>
+                <a href="{% url 'multi_multiplication' %}">multiplicação</a>
             </div>
         </div>
         <div class="form">
-            <form>
-                <div class="fields">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <!--<div class="fields">
                         <input type="text" id="number_x" placeholder="Insira o 1º número">
                         <h1>X</h1>
                         <input type="text" id="number_y" placeholder="Insira o 2º número">
-                </div>
-                <div class="button-submit">
-                    <input type="submit" id="enviar" value="Calcular">
-                </div>
+                </div>-->    
+                <input type="submit" id="enviar" value="Calcular">
             </form>
         </div>
     </div>
