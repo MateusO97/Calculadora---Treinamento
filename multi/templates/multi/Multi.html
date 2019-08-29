@@ -9,7 +9,7 @@
 <body>
     <div class="interface">
         <div class="menu">
-            <div class="menu-title"></div>
+            <div class="menu-title"><img src="https://image.flaticon.com/icons/png/512/95/95089.png"></div>
             <div class="menu-options">
                 <a href="#">Home</a>
                 <a href="#">soma</a>
@@ -22,15 +22,24 @@
         <div class="form">
             <form method="POST">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <!--<div class="fields">
-                        <input type="text" id="number_x" placeholder="Insira o 1º número">
-                        <h1>X</h1>
-                        <input type="text" id="number_y" placeholder="Insira o 2º número">
-                </div>-->    
-                <input type="submit" id="enviar" value="Calcular">
+                <div class="form-main">
+                    {{ form.as_p }}  
+                    <input type="submit" id="enviar" value="Calcular">
+                </div>
             </form>
         </div>
+        <footer class="rodape">
+            <div class="rodape-content">
+                <div class="address-rodape">
+                    <div class="address-rodape-title">NOSSO ENDEREÇO</div>
+                    <span>UNB Campus Gama - Gama, Brasília - DF, 70297-400</span>
+                    <a href="https://goo.gl/maps/ngqujPig4JQ2" target="_link">Como chegar</a>
+                </div>
+            </div>
+            <div class="developer">
+                <div>&copy; MDS 2019 - Todos os direitos reservados</div>
+            </div>
+        </footer>
     </div>
 </body>    
 </html>
