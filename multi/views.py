@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import MultiForm
 from django.http import HttpResponse
 from multi.models import Multi
@@ -21,3 +21,18 @@ def  multi_multiplication(request):
 def see_all(request):
     operations = Multi.objects.all()
     return render(request, 'multi/SeeAll.html', {'operations': operations})
+
+def edit_operation(request, id):
+    operation = get_object_or_404(Multi, pk=id) #Pega objeto por objeto da model passada
+    form = MultiForm(instance=operation) #Pega o formulário com os dados do objeto passado
+
+    if(request.method == 'POST'):
+        form = MultiForm(request.POST, instance=operation)
+
+        if(form.is_valid()):
+            form.save()
+            return redirect('/')
+        else:
+            return render(request, 'multi/EditOperation.html', {'form': form, 'operation': operation})
+    else:
+        return render(request, 'multi/EditOperation.html', {'form': form, 'operation': operation})
