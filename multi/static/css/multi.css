@@ -139,15 +139,29 @@ input {
 
 .operations {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin-left: 20px;
     margin-top: 50px;
+    margin-right: 20px;
     font-size: 24px;
     font-weight: bolder;
+    justify-content: space-between;
 }
 
 .operations a {
     text-decoration: none;
+    color: #000;
+}
+
+.operations a:hover {
+    border-bottom: 2px solid #999;
+}
+
+.current-operation {
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    border-bottom: 2px dotted #999;
 }
 
 .first-operand {
@@ -155,7 +169,10 @@ input {
 }
 
 .result {
-    border-bottom: 2px dotted #999;
-    max-width: 80%;
+    max-width: 100%;
     padding-bottom: 10px;
+}
+
+.edit {
+    align-self: flex-end;
 }
