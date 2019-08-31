@@ -21,9 +21,12 @@
         </div>
         <div class="operations">
             {% for operation in operations %}
+            <div class="current-operation">
                 <div class="first-operand">1º operando: <a href="/operation/{{operation.id}}">{{ operation.number_x }}</a></div>
                 <div class="second-operand">2º operando: <a href="/operation/{{operation.id}}">{{ operation.number_y }}</a></div>
                 <div class="result">Resultado: <a href="/operation/{{operation.id}}">{{ operation.res }}</a></div>
+            </div>
+            <div class="edit"><a href="/edit/{{operation.id}}">Editar</a></div>
             {% endfor %}
         </div>
         <footer class="rodape">

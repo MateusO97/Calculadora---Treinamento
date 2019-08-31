@@ -5,4 +5,5 @@ from . import views
 urlpatterns = [
     path('', views.multi_multiplication, name='multi_multiplication'),
     path('multi/see_all', views.see_all, name='see_all'),
+    path('edit/<int:id>', views.edit_operation, name='edit_operation'),
 ]
