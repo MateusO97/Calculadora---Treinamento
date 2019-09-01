@@ -18,18 +18,10 @@
                 <a href="#">Potenciação</a>
                 <a href="{% url 'multi_multiplication' %}">Multiplicação</a>
             </div>
-            <div class="sub-menu">
-                <a href="{% url 'see_all' %}">Histórico de multiplicações</a>
-            </div>
         </div>
-        <div class="form">
-            <form method="POST">
-                {% csrf_token %}
-                <div class="form-main">
-                    {{ form.as_p }}  
-                    <input type="submit" id="enviar" value="Calcular">
-                </div>
-            </form>
+        <div class="content">
+            <p>Essa é uma calculadora desenvolvida para treinar habilidades em desenvolvimento 
+            web com Django. Escolha uma das opções acima no menu.</p>
         </div>
         <footer class="rodape">
             <div class="rodape-content">

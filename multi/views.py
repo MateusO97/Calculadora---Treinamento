@@ -4,6 +4,9 @@ from django.http import HttpResponse
 from multi.models import Multi
 
 # Create your views here.
+def home(request):
+    return render(request, 'multi/Home.html', {})
+
 def  multi_multiplication(request):
     form = MultiForm(request.POST or None)
     if request.method == "POST":
