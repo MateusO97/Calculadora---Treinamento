@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+
+body {
+    border: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+.menu {
+    display: flex;
+    max-height: 80px;
+    background-color: #404040;
+    padding-left: 20px;
+    min-height: 80px;
+    align-items: flex-end;
+    justify-content: space-around;
+    font-family: 'Patua One', cursive;
+}
+
+.menu-options {
+    height: 100%;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.menu-options a {
+    color: #d16813;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.menu-options a:hover {
+    color: #fff;
+}
+
+.menu-title {
+    margin-bottom: 10px;
+}
+
+.menu-title img {
+    max-width: 120px;
+    max-height: 50px;
+}
+
+.sub-menu {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: #e6b71e;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 156px;
+}
+
+.button-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit input {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
+    font-weight: bolder;
+}
+
+.form-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 80px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    font-weight: bolder;
+    text-align: center;
+}
+
+#enviar {
+    border: 1px solid black;
+}
+
+.rodape {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	bottom: 0;
+	margin-top: 20px;
+	background-color: #000;
+	min-height: 100px;
+	padding-top: 20px;
+	flex-direction: column;
+    color: #fff;
+}
+
+.rodape-content {
+	display: flex;
+	width: 100%;
+}
+
+.address-rodape {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-left: 50px;
+	align-items: center;
+	color: #fff;
+}
+
+.contact-rodape {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	margin-right: 50px;
+	color: #fff;
+}
+
+.address-rodape-title {
+	font-weight: bolder;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.address-rodape span {
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.address-rodape a {
+	color: #fff;
+}
+
+.developer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.operations {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+.operations a {
+    text-decoration: none;
+    color: #000;
+}
+
+.operations a:hover {
+    border-bottom: 2px solid #999;
+}
+
+.current-operation {
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    border-bottom: 2px dotted #999;
+}
+
+.first-operand {
+    margin-top: 10px;
+}
+
+.result {
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+.edit {
+    align-self: flex-end;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 375px;
+}

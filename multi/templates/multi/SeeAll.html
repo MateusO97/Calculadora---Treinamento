@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>Multi-Home
+    </title>
+    <link rel="stylesheet" href="{% static 'css/multi.css' %}">
+</head>
+
+<body>
+    <div class="interface">
+        <div class="menu">
+            <div class="menu-title"><img src="https://image.flaticon.com/icons/png/512/95/95089.png"></div>
+            <div class="menu-options">
+                <a href="/">Home</a>
+                <a href="#">Soma</a>
+                <a href="#">Subtração</a>
+                <a href="#">Divisão</a>
+                <a href="#">Potenciação</a>
+                <a href="{% url 'multi_multiplication' %}">Multiplicação</a>
+            </div>
+        </div>
+        <div class="operations">
+            {% for operation in operations %}
+            <div class="current-operation">
+                <div class="first-operand">1º operando: <a href="/operation/{{operation.id}}">{{ operation.number_x }}</a></div>
+                <div class="second-operand">2º operando: <a href="/operation/{{operation.id}}">{{ operation.number_y }}</a></div>
+                <div class="result">Resultado: <a href="/operation/{{operation.id}}">{{ operation.res }}</a></div>
+            </div>
+            <div class="edit"><a href="/edit/{{operation.id}}">Editar</a></div>
+            {% endfor %}
+        </div>
+        <footer class="rodape">
+            <div class="rodape-content">
+                <div class="address-rodape">
+                    <div class="address-rodape-title">NOSSO ENDEREÇO</div>
+                    <span>UNB Campus Gama - Gama, Brasília - DF, 70297-400</span>
+                    <a href="https://goo.gl/maps/ngqujPig4JQ2" target="_link">Como chegar</a>
+                </div>
+            </div>
+            <div class="developer">
+                <div>&copy; MDS 2019 - Todos os direitos reservados</div>
+            </div>
+        </footer>
+    </div>
+</body>    
+</html>
